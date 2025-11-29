@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="light" lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cc0000",
+                        "background-light": "#f5f5f5",
+                        "background-dark": "#1a1a1a",
+                        "text-light": "#212121",
+                        "text-dark": "#e0e0e0",
+                        "card-light": "#ffffff",
+                        "card-dark": "#2c2c2c",
+                        "border-light": "#e0e0e0",
+                        "border-dark": "#424242",
+                    },
+                    fontFamily: {
+                        "display": ["Poppins", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .reveal {
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: 1s all ease;
+        }
+        .reveal.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+<title>Düz Tabanlı Silolar - Soylu Silo</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-6 py-4 md:px-10 md:py-3 sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm w-full">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">Soylu Silo</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-12">
+<div class="flex items-center gap-12">
+<a class="text-lg font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="index.html">Ana Sayfa</a>
+<a class="text-lg font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="aboutus.html">Hakkımızda</a>
+<a class="text-lg font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="products.html">Ürünler</a>
+<a class="text-lg font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="projects.html">Projeler</a>
+<a class="text-lg font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="contact.html">İletişim</a>
+</div>
+</nav>
+<div class="flex items-center gap-2">
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-lg font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" href="contact.html">
+<span class="truncate">Teklif Al</span>
+</a>
+</div>
+</header>
+<main class="flex w-full flex-col">
+<section class="flex flex-col gap-12 px-6 py-12 md:px-10 md:py-20 lg:py-24 reveal">
+    <div class="mx-auto w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="flex flex-col gap-4">
+            <h1 class="text-primary text-4xl md:text-5xl font-bold leading-tight tracking-[-0.02em]">Düz Tabanlı Silolar</h1>
+            <p class="text-text-light/80 dark:text-text-dark/80 text-lg md:text-xl font-normal leading-relaxed">Geniş kapasiteli ve uzun süreli tahıl depolama için ideal çözüm. Soylu Silo düz tabanlı siloları, dayanıklılığı ve esnekliği bir araya getirerek, büyük ölçekli depolama ihtiyaçlarınız için ekonomik ve güvenilir bir çözüm sunar. Uzun ömürlü kullanım için tasarlanmıştır.</p>
+            <a href="contact.html" class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary/90 mt-6 shadow-md">
+                <span class="truncate">Teklif Almak İçin İletişime Geçin</span>
+                <span class="material-symbols-outlined ml-2 text-xl">arrow_forward</span>
+            </a>
+        </div>
+        <div class="w-full h-96 md:h-[550px] overflow-hidden rounded-xl shadow-xl border border-border-light dark:border-border-dark">
+            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1596700548174-89753e1f0e2b?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Düz Tabanlı Silolar"/>
+        </div>
+    </div>
+    <div class="mx-auto w-full max-w-6xl mt-12">
+        <h2 class="text-text-light dark:text-text-dark text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-8 text-center">Neden Soylu Silo Düz Tabanlı Silolar?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="flex flex-col gap-4 p-8 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark hover:shadow-lg transition-shadow duration-300">
+                <span class="material-symbols-outlined text-primary text-5xl">gavel</span>
+                <h3 class="text-xl font-bold text-text-light dark:text-text-dark">Üstün Dayanıklılık</h3>
+                <p class="text-base text-text-light/80 dark:text-text-dark/80">En ağır yükler ve zorlu iklim koşulları için tasarlanmış, yüksek kaliteli galvanizli çelik yapı.</p>
+            </div>
+            <div class="flex flex-col gap-4 p-8 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark hover:shadow-lg transition-shadow duration-300">
+                <span class="material-symbols-outlined text-primary text-5xl">view_module</span>
+                <h3 class="text-xl font-bold text-text-light dark:text-text-dark">Esnek Modüler Tasarım</h3>
+                <p class="text-base text-text-light/80 dark:text-text-dark/80">İhtiyaçlarınıza göre kolayca ölçeklendirilebilir ve özelleştirilebilir modüler sistem.</p>
+            </div>
+            <div class="flex flex-col gap-4 p-8 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark hover:shadow-lg transition-shadow duration-300">
+                <span class="material-symbols-outlined text-primary text-5xl">eco</span>
+                <h3 class="text-xl font-bold text-text-light dark:text-text-dark">Enerji Verimliliği</h3>
+                <p class="text-base text-text-light/80 dark:text-text-dark/80">Optimize edilmiş havalandırma ve izolasyon ile enerji tüketiminde tasarruf.</p>
+            </div>
+            <div class="flex flex-col gap-4 p-8 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark hover:shadow-lg transition-shadow duration-300">
+                <span class="material-symbols-outlined text-primary text-5xl">precision_manufacturing</span>
+                <h3 class="text-xl font-bold text-text-light dark:text-text-dark">İleri Teknoloji Otomasyon</h3>
+                <p class="text-base text-text-light/80 dark:text-text-dark/80">Akıllı sensörler ve otomasyon sistemleri ile depolama koşullarının hassas kontrolü.</p>
+            </div>
+            <div class="flex flex-col gap-4 p-8 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark hover:shadow-lg transition-shadow duration-300">
+                <span class="material-symbols-outlined text-primary text-5xl">security</span>
+                <h3 class="text-xl font-bold text-text-light dark:text-text-dark">Ürün Güvenliği</h3>
+                <p class="text-base text-text-light/80 dark:text-text-dark/80">Entegre güvenlik sistemleri ile depolanan ürünlerinizin tam korunması.</p>
+            </div>
+            <div class="flex flex-col gap-4 p-8 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark hover:shadow-lg transition-shadow duration-300">
+                <span class="material-symbols-outlined text-primary text-5xl">extension</span>
+                <h3 class="text-xl font-bold text-text-light dark:text-text-dark">Geniş Aksesuar Yelpazesi</h3>
+                <p class="text-base text-text-light/80 dark:text-text-dark/80">Boşaltım sistemleri, kapaklar ve daha fazlası ile fonksiyonelliği artırın.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white dark:bg-black w-full">
+<div class="max-w-6xl mx-auto px-6 md:px-10 py-16">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="col-span-1 sm:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-7 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">Soylu Silo</h2>
+</div>
+<p class="text-sm text-gray-400 dark:text-gray-500">Güvenilir ve yenilikçi depolama çözümleriyle geleceği şekillendiriyoruz.</p>
+<div class="flex space-x-4 mt-6">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.701V4.115l6.86 4.935-6.86 4.935z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 tracking-wide text-gray-200 text-xl">Hızlı Bağlantılar</h4>
+<ul class="space-y-5">
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="index.html">Anasayfa</a></li>
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="aboutus.html">Hakkımızda</a></li>
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="products.html">Ürünler</a></li>
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="projects.html">Projeler</a></li>
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="contact.html">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 tracking-wide text-gray-200 text-xl">Ürünler</h4>
+<ul class="space-y-5">
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="products.html">Tahıl Siloları</a></li>
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="products.html">Yem Siloları</a></li>
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="products.html">Taşıma Sistemleri</a></li>
+<li><a class="text-lg text-gray-400 hover:text-primary transition-colors" href="products.html">Aksesuarlar</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 tracking-wide text-gray-200 text-xl">İletişim</h4>
+<ul class="space-y-5 text-lg text-gray-400">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xl mt-0.5">location_on</span>
+<span>Organize Sanayi Bölgesi, 123. Cadde No: 45, Aksaray, Türkiye</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl">email</span>
+<a class="hover:text-primary transition-colors" href="mailto:info@soylusilo.com">info@soylusilo.com</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl">call</span>
+<a class="hover:text-primary transition-colors" href="tel:+901234567890">+90 123 456 78 90</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 dark:border-gray-800 py-6">
+<p class="text-center text-sm text-gray-500">© 2024 Soylu Silo. Tüm hakları saklıdır.</p>
+</div>
+</footer>
+</div>
+<script>
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+</script>
+</body>
+</html>
