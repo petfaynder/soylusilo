@@ -84,7 +84,7 @@
 </header>
 <main class="flex-grow">
 <section class="w-full reveal">
-<div class="flex min-h-[400px] flex-col items-center justify-center gap-6 bg-cover bg-center bg-no-repeat p-4" data-alt="Abstract image of a modern corporate building exterior" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4ksrMLZkvfpOFSUPrgeOHWidUnyDiZx2zdfpwN9ZRMopjwB4bYrdUCuqKXoBPDZmSTS5M6C31yh_ZC-0tWs9yJXvuySOqKXoBPDZmSTS5M6C31yh_ZC-0tWs9yJXvuySOqFa0iGHY5yhhImyyjWpsO7nwyk845ls4k_n9giGbNbf5-VC035oA1gWpcJQBskpcRg5HrfNvk-jE4rHUiQKhuyGBtpCo55XBbYRhzsoVbciy4REZ03s45vdO1hFxhgTX52fzYRo7kxqoQVzzzAbHS42jWwcBGiQ4a1cHGr5ZauF2jIR_a");'>
+<div class="flex min-h-[400px] flex-col items-center justify-center gap-6 bg-cover bg-center bg-no-repeat p-4 bg-primary" data-alt="Abstract image of a modern corporate building exterior">
 <div class="flex flex-col gap-2 text-center">
 <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl">Bizimle İletişime Geçin</h1>
 <p class="text-white/90 text-sm font-normal leading-normal md:text-base">Profesyonel ekibimizle tanışın ve projeleriniz hakkında görüşelim.</p>
@@ -100,7 +100,7 @@
 <span class="material-symbols-outlined text-primary mt-1">location_on</span>
 <div>
 <p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal mb-1">Adres</p>
-<p class="text-sm font-normal leading-normal">Örnek Sanayi Bölgesi, Silo Cd. No:1, Ankara, Türkiye</p>
+<p class="text-sm font-normal leading-normal">Organize Sanayi Bölgesi, 123. Cadde No: 45, Aksaray, Türkiye</p>
 </div>
 </div>
 <div class="grid grid-cols-[auto_1fr] gap-x-4 border-b border-border-light dark:border-border-dark py-5 items-start">
@@ -128,26 +128,26 @@
 </div>
 <div class="flex flex-col gap-6">
 <h2 class="text-2xl font-bold leading-tight tracking-[-0.015em] lg:text-3xl">Bize Yazın</h2>
-<form class="flex flex-col gap-6">
+<form action="send_mail.php" method="POST" class="flex flex-col gap-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <label class="flex flex-col w-full">
 <p class="text-sm font-medium leading-normal pb-2">Ad Soyad</p>
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 h-12 p-3 text-sm font-normal leading-normal bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary placeholder:text-text-light dark:placeholder:text-dark" placeholder="Adınızı ve soyadınızı girin" type="text" value=""/>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 h-12 p-3 text-sm font-normal leading-normal bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary placeholder:text-text-light dark:placeholder:text-dark" placeholder="Adınızı ve soyadınızı girin" type="text" name="name" required/>
 </label>
 <label class="flex flex-col w-full">
 <p class="text-sm font-medium leading-normal pb-2">E-posta</p>
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 h-12 p-3 text-sm font-normal leading-normal bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary placeholder:text-text-light dark:placeholder:text-dark" placeholder="E-posta adresinizi girin" type="email" value=""/>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 h-12 p-3 text-sm font-normal leading-normal bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary placeholder:text-text-light dark:placeholder:text-dark" placeholder="E-posta adresinizi girin" type="email" name="email" required/>
 </label>
 </div>
 <label class="flex flex-col w-full">
 <p class="text-sm font-medium leading-normal pb-2">Konu</p>
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 h-12 p-3 text-sm font-normal leading-normal bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary placeholder:text-text-light dark:placeholder:text-dark" placeholder="Mesajınızın konusunu girin" type="text" value=""/>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 h-12 p-3 text-sm font-normal leading-normal bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary placeholder:text-text-light dark:placeholder:text-dark" placeholder="Mesajınızın konusunu girin" type="text" name="subject"/>
 </label>
 <label class="flex flex-col w-full">
 <p class="text-sm font-medium leading-normal pb-2">Mesajınız</p>
-<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg focus:outline-0 focus:ring-0 p-3 text-sm font-normal leading-normal bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary placeholder:text-text-light dark:placeholder:text-dark" placeholder="Mesajınızı buraya yazın..." rows="5"></textarea>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg focus:outline-0 focus:ring-0 p-3 text-sm font-normal leading-normal bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary placeholder:text-text-light dark:placeholder:text-dark" placeholder="Mesajınızı buraya yazın..." rows="5" name="message" required></textarea>
 </label>
-<button class="flex min-w-[84px] max-w-full cursor-pointer items-center justify-center self-start overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<button class="flex min-w-[84px] max-w-full cursor-pointer items-center justify-center self-start overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]" type="submit">
 <span class="truncate">Mesaj Gönder</span>
 </button>
 </form>
@@ -156,7 +156,7 @@
 </section>
 <section class="w-full reveal">
 <div class="w-full h-[400px] lg:h-[500px] bg-gray-300 dark:bg-gray-700">
-<iframe allowfullscreen="" data-location="Ankara, Türkiye" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.828811808889!2d32.83695631538356!3d39.94420897942255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f0e213b2e5b%3A0x5f8f8b8e8f8b8b8b!2sAnkara!5e0!3m2!1sen!2str!4v1621345678901!5m2!1sen!2str" style="border:0;" width="100%"></iframe>
+<iframe allowfullscreen="" data-location="Organize Sanayi Bölgesi, 123. Cadde No: 45, Aksaray, Türkiye" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.828811808889!2d32.83695631538356!3d39.94420897942255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f0e213b2e5b%3A0x5f8f8b8e8f8b8b8b!2sAksaray!5e0!3m2!1sen!2str!4v1621345678901!5m2!1sen!2str" style="border:0;" width="100%"></iframe>
 </div>
 </section>
 </main>
